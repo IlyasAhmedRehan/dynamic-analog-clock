@@ -1,0 +1,72 @@
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.clock {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border: 3.45px solid #FFFFFF;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background: #F3F3F3;
+
+}
+
+.clock-hand {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  background-color: #333;
+  transform-origin: bottom;
+  transition: transform 0.5s ease-in-out;
+}
+
+.hour-hand {
+  width: 6px;
+  height: 120px;
+}
+
+.minute-hand {
+  width: 4px;
+  height: 160px;
+}
+
+.second-hand {
+  width: 2px;
+  height: 180px;
+  background-color: red;
+}
+
+.center-dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #333;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+@media (max-width: 768px) {
+  .clock {
+    width: 300px;
+    height: 300px;
+  }
+
+  .hour-hand {
+    height: 60px;
+  }
+
+  .minute-hand {
+    height: 80px;
+  }
+
+  .second-hand {
+    height: 90px;
+  }
+}
